@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,6 +19,17 @@ const config = {
     },
     extend: {
       colors: {
+        navy: {
+          900: '#071A33',
+          800: '#0B1F3A',
+        },
+        gold: {
+          DEFAULT: '#D4AF37',
+          500: '#D4AF37',
+        },
+        royal: {
+          DEFAULT: '#4169E1',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -53,6 +64,10 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        poppins: ['var(--font-poppins)'],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -70,12 +85,18 @@ const config = {
         "float": {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" }
+        },
+        "glow": {
+          "0%, 100%": { opacity: "0.5" },
+          "50%": { opacity: "1" }
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "float": "float 3s ease-in-out infinite"
+        "float": "float 6s ease-in-out infinite",
+        "float-delayed": "float 6s ease-in-out infinite 3s",
+        "glow": "glow 3s ease-in-out infinite",
       },
     },
   },
