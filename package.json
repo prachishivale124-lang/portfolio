@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@capacitor/android": "^8.4.1",
+    "@capacitor/cli": "^8.4.0",
+    "@capacitor/core": "^8.4.0",
+    "@radix-ui/react-slot": "^1.0.2",
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.2",
     "@types/three": "^0.163.0",
-    "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.0",
