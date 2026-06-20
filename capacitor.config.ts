@@ -5,9 +5,9 @@ const config: CapacitorConfig = {
   appName: 'prachi-portfolio',
   webDir: 'public',
   server: {
-    url: 'https://YOUR_VERCEL_APP_URL.vercel.app', // TODO: Replace with your actual Vercel URL
+    url: 'https://portfolio-azure-five-76.vercel.app',
     allowNavigation: [
-      'YOUR_VERCEL_APP_URL.vercel.app', // TODO: Replace with your actual Vercel domain
+      'portfolio-azure-five-76.vercel.app',
       '*.vercel.app'
     ]
   }
