@@ -20,12 +20,21 @@ const config = {
     extend: {
       colors: {
         navy: {
+          950: '#030D1A',
           900: '#071A33',
-          800: '#0B1F3A',
+          800: '#0B2545',
+          700: '#0D2F57',
+          600: '#103A6B',
         },
         gold: {
           DEFAULT: '#D4AF37',
+          light: '#E8CC6A',
+          dark: '#B8961E',
           500: '#D4AF37',
+        },
+        cream: {
+          DEFAULT: '#F8F5EE',
+          muted: '#E8E2D5',
         },
         royal: {
           DEFAULT: '#4169E1',
@@ -67,6 +76,7 @@ const config = {
       fontFamily: {
         sans: ['var(--font-inter)'],
         poppins: ['var(--font-poppins)'],
+        playfair: ['var(--font-playfair)'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,11 +94,31 @@ const config = {
         },
         "float": {
           "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" }
+          "50%": { transform: "translateY(-12px)" }
         },
-        "glow": {
-          "0%, 100%": { opacity: "0.5" },
-          "50%": { opacity: "1" }
+        "glow-pulse": {
+          "0%, 100%": { opacity: "0.4" },
+          "50%": { opacity: "0.9" }
+        },
+        "shimmer": {
+          "0%": { backgroundPosition: "-200% center" },
+          "100%": { backgroundPosition: "200% center" }
+        },
+        "slide-up": {
+          "0%": { opacity: "0", transform: "translateY(24px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" }
+        },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" }
+        },
+        "scroll-bounce": {
+          "0%, 100%": { transform: "translateY(0)", opacity: "1" },
+          "50%": { transform: "translateY(6px)", opacity: "0.4" }
+        },
+        "rotate-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" }
         }
       },
       animation: {
@@ -96,7 +126,12 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "float": "float 6s ease-in-out infinite",
         "float-delayed": "float 6s ease-in-out infinite 3s",
-        "glow": "glow 3s ease-in-out infinite",
+        "glow-pulse": "glow-pulse 3s ease-in-out infinite",
+        "shimmer": "shimmer 3s linear infinite",
+        "slide-up": "slide-up 0.6s ease-out forwards",
+        "fade-in": "fade-in 0.8s ease-out forwards",
+        "scroll-bounce": "scroll-bounce 1.5s ease-in-out infinite",
+        "rotate-slow": "rotate-slow 20s linear infinite",
       },
     },
   },
